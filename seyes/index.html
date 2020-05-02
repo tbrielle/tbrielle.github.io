@@ -1,0 +1,114 @@
+<!doctype html>
+<html class="no-js" lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Éditeur WYSIWYG avec réglure Seyès grands carreaux</title>
+  <meta name="description" content="Éditeur WYSIWYG avec réglure Seyès grands carreaux">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/toolbar.css">
+  <link rel="stylesheet" href="css/reglure.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="toolbar">
+    <a href="#" data-command='undo' class="button-group-start"><i class='fa fa-undo'></i></a>
+    <a href="#" data-command='redo' class="button-group-end"><i class='fa fa-repeat'></i></a>
+    
+    <a href="#" data-command="foreColor" data-value="#0000FF" class="button-group-start"><i class='fa fa-font' style='color:#0000FF;'></i></a>
+    <a href="#" data-command="foreColor" data-value="#008800"><i class='fa fa-font' style='color:#008800;'></i></a>
+    <a href="#" data-command="foreColor" data-value="#FF0000"><i class='fa fa-font' style='color:#FF0000;'></i></a>
+    <a href="#" data-command="foreColor" data-value="#808080"><i class='fa fa-font' style='color:#808080;'></i></a>
+    <a href="#" data-command="foreColor" data-value="#000000" class="button-group-end"><i class='fa fa-font' style='color:#000000;'></i></a>
+
+    <a href="#" data-command='bold' class="button-group-start"><i class='fa fa-bold'></i></a>
+    <a href="#" data-command='italic'><i class='fa fa-italic'></i></a>
+    <a href="#" data-command='underline'><i class='fa fa-underline'></i></a>
+    <a href="#" data-command='strikeThrough' class="button-group-end"><i class='fa fa-strikethrough'></i></a>
+
+    <a href="#" data-command='justifyLeft' class="button-group-start"><i class='fa fa-align-left'></i></a>
+    <a href="#" data-command='justifyCenter'><i class='fa fa-align-center'></i></a>
+    <a href="#" data-command='justifyRight' class="button-group-end"><i class='fa fa-align-right'></i></a>
+
+    <a href="#" data-command='insertImage' class="button-group-start button-group-end"><i class='fa fa-image'></i></a>
+
+    <a href="#" data-command='subscript' class="button-group-start"><i class='fa fa-subscript'></i></a>
+    <a href="#" data-command='superscript' class="button-group-end"><i class='fa fa-superscript'></i></a>
+  </div>
+
+  <div class="page">
+    <div class="main" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      <div class="margin" contenteditable="true">
+        <br>
+        <br>
+        <br>
+        <br>
+        <span style="color: red;">Bien !</span><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span style="color: red;">Bien !</span><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span style="color: red;">Bien !</span><br>
+        <span></span><br>
+      </div>
+      <div class="content" contenteditable="true">
+        <div style="text-align: center;"><u id="date">Mercredi 29 avril 2020</u></div>
+        <br>
+        <u>Dictée</u><br>
+        <br>
+        Un pangramme est une phrase comportant toutes les lettres de l'alphabet. Voici un exemple :<br>
+        <i>Voix ambiguë d'un cœur qui, au zéphyr, préfère les jattes de kiwis.</i><br>
+        <br>
+        <u>Géométrie</u><br>
+        <br>
+        Dessine un parallélogramme.<br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Parall%C3%A9logramme.svg/330px-Parall%C3%A9logramme.svg.png" style="width: 8.8cm; height: 3.2cm;"><br>
+        <br>
+        <u>Calcul</u><br>
+        <br>
+        Calcule 64-16.<br>
+        <br>
+        &nbsp;&nbsp;&nbsp;6<span style="color: #808080;">&nbsp;<sup>1</sup></span>4<br>
+        -&nbsp;&nbsp;1<span style="color: #808080;"><sub>1</sub></span>&nbsp;6&nbsp;<br>
+        <sup>----------</sup><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;8<br>
+        <span></span><br>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.16/svg.min.js" integrity="sha256-MCvBrhCuX8GNt0gmv06kZ4jGIi1R2QNaSkadjRzinFs=" crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script type="module" src="modules/toolbar.mjs"></script>
+  <script type="module" src="modules/reglure.mjs"></script>
+  <script type="module" src="modules/main.mjs"></script>
+
+</body>
+
+</html>

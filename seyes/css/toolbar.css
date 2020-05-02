@@ -1,0 +1,49 @@
+.toolbar {
+  text-align: center;
+  position: fixed;
+  margin: 0 auto;
+  z-index: 2;
+  /* Center horizontally */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toolbar a {
+  border: 1px solid #AAA;
+  background: #FFF;
+  font-family: 'Candal';
+  border-radius: 1px;
+  color: black;
+  padding: 5px;
+  width: 1.5em;
+  margin: -2px;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0px 1px 0px #CCC;
+}
+
+.toolbar a:hover {
+  background: #f2f2f2;
+  border-color: #8c8c8c;
+}
+
+.toolbar a.button-group-start {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.toolbar a.button-group-end {
+  margin-right: 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.toolbar .underline {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.toolbar .strike-through {
+  text-decoration: line-through;
+}
